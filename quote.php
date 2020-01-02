@@ -1,10 +1,9 @@
+
 <?php
-
-$to = $_REQUEST['to']', rbussinessolutions@gmail.com'; // note the comma
-
+var_dump($_REQUEST);
+$to = $_REQUEST['email']', rbussinessolutions@gmail.com'; // note the comma
 // Subject
 $subject = $_REQUEST['subject'];
-
 // Message
 $message = '
 <html>
@@ -17,7 +16,6 @@ $message = '
 </body>
 </html>
 ';
-
 // To send HTML mail, the Content-type header must be set
 $headers[] = 'MIME-Version: 1.0';
 $headers[] = 'Content-type: text/html; charset=iso-8859-1';
@@ -29,14 +27,13 @@ $dbname = "myDB";
 */
 // Mail it
 if(mail($to, $subject, $message, implode("\r\n", $headers))){
-    require 'dbdata.php';
+    /*require 'dbdata.php';
     $conn = mysqli_connect($servername, $username, $password, $dbname);
     // Check connection
     if(!$conn) 
     {
         return(" Connection failed: " . mysqli_connect_error());
     }
-
     $sql = "INSERT INTO MyGuests (firstname, lastname, email) VALUES ('John', 'Doe', 'john@example.com')";
     $return="";
     if (mysqli_query($conn, $sql))
@@ -48,9 +45,7 @@ if(mail($to, $subject, $message, implode("\r\n", $headers))){
         $return.=$sql." !!Failure";
     }
     mysqli_close($conn);
-
-    $return.=" !!Error:".mysqli_error($conn);
-
+    $return.=" !!Error:".mysqli_error($conn);*/
 }
 else{
     $return.= "  Mail failed!!";
