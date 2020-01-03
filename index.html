@@ -623,17 +623,18 @@
             <h3>Exp(0-1yr)</h3>
     
         <form method="POST" action="https://rbussinessolutions.com/emailprocess.php"  id="Freshers">
-			<input type="hidden" class="form-control" id="exampleInputEmail1" aria-describedby="email Help" name="subject" value="Quotaion For"><br>
-            <input type="hidden" class="form-control" id="exampleInputEmail1" aria-describedby="email Help" name="exp" value="Freshers"><br>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="email Help" name="email"placeholder="Enter email" ><br>
-              <select class="form-control" id="country" aria-describedby="email Help" name="c_country" >
+			<input type="hidden" class="form-control" id="exampleInputEmail1" aria-describedby="email Help" name="subject" value="Quotaion_For"><br>
+            <input type="hidden" class="form-control" id="exampleInputEmail1" aria-describedby="email Help" name="exp" value="Fresher(s)"><br>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="email Help" name="email"placeholder="Enter email"required ><br>
+              <select class="form-control" id="country" aria-describedby="email Help" name="c_country" required>
 				<option value="USA" selected="selected">America(USA)</option>
 				<option value="AUS">Austrailia</option>
 				<option value="ENG">England</option>
 			  </select><br>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="email Help" name="etype" placeholder="Type of employee Developer,Client Support,Accountants,etc" ><br>
-            <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="Mobile Help" name="enumbers" placeholder="Number of employees"><br>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="email Help" name="discp" placeholder="description" ><br>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="email Help" name="etype" placeholder="Type of employee Developer,Client Support,Accountants,etc" required><br>
+            <input type="number" class="form-control" 
+            id="exampleInputEmail1" aria-describedby="Mobile Help" name="enumbers" placeholder="Number of employees" required min="0"><br>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="email Help" name="discp" placeholder="description" required><br>
           </div>
           <div class="panel-footer">
             <button type="button" class=" btn"  data-dismiss="modal" >Close</button>
@@ -656,17 +657,19 @@
             <div class="modal-body">
               <h3>Exp(1-3yrs)</h3>
              <form method="POST" action="https://rbussinessolutions.com/emailprocess.php"  id="Professionals">
-				 <input type="hidden" class="form-control" id="exampleInputEmail1" aria-describedby="email Help" name="subject" value="Quotaion For"><br>
-              <input type="hidden" class="form-control" id="exampleInputEmail1" aria-describedby="email Help" name="exp" value="Professionals"><br>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="email Help" name="c_email"placeholder="Enter email" ><br>
-              <select class="form-control" id="country" aria-describedby="email Help" name="c_country" >
+				 <input type="hidden" class="form-control" id="exampleInputEmail1" aria-describedby="email Help" name="subject" value="Quotaion_For" required><br>
+              <input type="hidden" class="form-control" id="exampleInputEmail1" aria-describedby="email Help" name="exp" value="Professional(s)" required><br>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="email Help" name="c_email"placeholder="Enter email" required><br>
+              <select class="form-control" id="country" aria-describedby="email Help" name="c_country"required >
 				<option value="USA" selected="selected">America(USA)</option>
 				<option value="AUS">Austrailia</option>
 				<option value="ENG">England</option>
 			  </select><br>
-              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="email Help" name="etype" placeholder="Type of employee Developer,Client Support,Accountants,etc" ><br>
-              <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="Mobile Help" name="enumbers" placeholder="Number of employees"><br>
-              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="email Help" name="discp" placeholder="description" ><br>
+              <input type="text" class="form-control" 
+              id="exampleInputEmail1" aria-describedby="email Help" name="etype" placeholder="Type of employee Developer,Client Support,Accountants,etc" required><br>
+              <input type="number" class="form-control" 
+              id="exampleInputEmail1" aria-describedby="Mobile Help" name="enumbers" placeholder="Number of employees" min="0"><br>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="email Help" name="discp" placeholder="description" required><br>
             </div>
             
             <div class="panel-footer">
@@ -690,17 +693,19 @@
           <div class="modal-body">
             <h3>Exp(4- 8+yrs)</h3>
             <form method="POST" action="https://rbussinessolutions.com/emailprocess.php"  id="Experts">
-				<input type="hidden" class="form-control" id="exampleInputEmail1" aria-describedby="email Help" name="subject" value="Quotaion For"><br>
-            <input type="hidden" class="form-control" id="exampleInputEmail1" aria-describedby="email Help" name="exp" value="Experts"><br>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="email Help" name="c_email"placeholder="Enter email" ><br>
-            <select class="form-control" id="country" aria-describedby="email Help" name="c_country" >
+				<input type="hidden" class="form-control" id="exampleInputEmail1" aria-describedby="email Help" name="subject" value="Quotaion_For"><br>
+            <input type="hidden" class="form-control" id="exampleInputEmail1" aria-describedby="email Help" name="exp" value="Expert(s)"><br>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="email Help" name="c_email"placeholder="Enter email" required><br>
+            <select class="form-control" id="country" aria-describedby="email Help" name="c_country" required>
 				<option value="USA" selected="selected">America(USA)</option>
 				<option value="AUS">Austrailia</option>
 				<option value="ENG">England</option>
 			  </select><br>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="email Help" name="etype" placeholder="Type of employee Developer,Client Support,Accountants,etc" ><br>
-            <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="Mobile Help" name="enumbers" placeholder="Number of employees"><br>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="email Help" name="discp" placeholder="description" ><br>
+            <input type="text" class="form-control" 
+            id="exampleInputEmail1" aria-describedby="email Help" name="etype" placeholder="Type of employee Developer,Client Support,Accountants,etc" required ><br>
+            <input type="number" class="form-control" 
+            id="exampleInputEmail1" aria-describedby="Mobile Help" name="enumbers" placeholder="Number of employees"required min="0"><br>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="email Help" name="discp" placeholder="description" required><br>
           </div>
           <div class="panel-footer">
             <button type="button" class=" btn"  data-dismiss="modal" >Close</button>
