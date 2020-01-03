@@ -11,11 +11,17 @@ $message = '
   <title>Birthday Reminders for August</title>
 </head>
 <body>
-  <h1>Mail Template</h1><br>
-  '.$_REQUEST["message"].'
+  <h1>'.$subject .'</h1>
+  <br>Your request for :
+  '
+  .$_REQUEST["message"]."
+  <br>
+  is under process.<br>
+  Our executives will contact your soon..<br>
+  for any other queries please <br>
+  watsapp:7447525123<br>
 </body>
-</html>
-';
+</html>";
 // To send HTML mail, the Content-type header must be set
 $headers[] = 'MIME-Version: 1.0';
 $headers[] = 'Content-type: text/html; charset=iso-8859-1';
