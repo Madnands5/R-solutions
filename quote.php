@@ -1,27 +1,48 @@
-
 <?php
 var_dump($_REQUEST);
 $to = $_REQUEST['email']', rbussinessolutions@gmail.com'; // note the comma
 // Subject
 $subject = $_REQUEST['subject'];
+if($subject=="Quotaion_For")
+{
+	$message='<html>
+	<head>
+	<title>Birthday Reminders for August</title>
+	</head>
+	<body>
+	<h1>'.$subject .'</h1>
+	<br>Your request :
+	'
+	.$_REQUEST['enumbers'].' '.$_REQUEST["exp"].'employee ('.$_REQUEST['discp'].')<BR>
+	<br>
+	is under process.<br>
+
+	Our executives will contact your soon...<br>
+	For any other queries please <br>
+	watsapp:7447525123<br>
+	</body>
+	</html>';
+}
+else if(){
 // Message
-$message = '
-<html>
-<head>
-  <title>Birthday Reminders for August</title>
-</head>
-<body>
-  <h1>'.$subject .'</h1>
-  <br>Your request for :
-  '
-  .$_REQUEST["message"]."
-  <br>
-  is under process.<br>
-  Our executives will contact your soon..<br>
-  for any other queries please <br>
-  watsapp:7447525123<br>
-</body>
-</html>";
+	$message = '
+	<html>
+	<head>
+	<title>Birthday Reminders for August</title>
+	</head>
+	<body>
+	<h1>'.$subject .'</h1>
+	<br>Your request for :
+	'
+	.$_REQUEST["message"].'
+	<br>
+	is under process.<br>
+	Our executives will contact your soon..<br>
+	for any other queries please <br>
+	watsapp:7447525123<br>
+	</body>
+	</html>';
+}
 // To send HTML mail, the Content-type header must be set
 $headers[] = 'MIME-Version: 1.0';
 $headers[] = 'Content-type: text/html; charset=iso-8859-1';
