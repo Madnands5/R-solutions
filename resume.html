@@ -1,321 +1,362 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" media="all">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" media="all">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="all">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<style>
-	@media print {
-		.bgimg-1 {
-   background-image: linear-gradient(to right, red , yellow) !important;
-  min-height: 100%;
-}
-		}
-	iframe{
-		border:solid 10px;
-		}
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-  height: 100%;
-  color: black
-  font-weight: bold;
-  line-height: 1.8;
-}
-p{
-	color:black;}
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* First image (Logo. Full height) */
-.bgimg-1 {
-   background-image: linear-gradient(to right, red , yellow);
-  min-height: 100%;
-}
-
-/* Second image (Portfolio) */
-.bgimg-2 {
-     background-image: linear-gradient(to right, red , yellow);
-  min-height: 400px;
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
-   background-image: linear-gradient(to right, red , yellow);
-  min-height: 400px;
-}
-.btn {
-  background-color: white;
-  border: none;
-  color: black;
-  padding: 1px 30px;
-  cursor: pointer;
-  font-size: 20px;
-}
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
-}
-</style>
-<body>
-
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-
-  </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-
-  </div>
-</div>
-
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-white w3-xlarge w3-wide w3-animate-opacity"> <span class="w3-hide-small">Portfolio</span> </span>
-  </div>
-</div>
-
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center"><em>I love writting code</em></p>
-  <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-    qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>Rahul Bhingardive</b></p><br>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4Dyl_4V_fW1rrZQ-mPPQaTGvIwnGT3mzmTQ-pWpPpQ6FiwffJNQ&s" class="w3-round w3-image " alt="Photo of Me" width="500" height="333">
-    </div>
-
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-  </div>
-  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-  <p class="w3-wide"><i class="fa fa-desktop"></i>PHP</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-yellow w3-center" style="width:90%">90%</div>
-  </div>
-    <p class="w3-wide"><i class="fa fa-mobile"></i>Python</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-red w3-center" style="width:75%">75%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>Jquey</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-blue w3-center" style="width:85%">85%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-photo"></i>HTML</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-orange w3-center" style="width:90%">90%</div>
-  </div>
-    <p class="w3-wide"><i class="fa fa-photo"></i>Css</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-green w3-center" style="width:90%">90%</div>
-  </div>
-</div>
-
-<div class="w3-row w3-center w3-black w3-padding-16">
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">1.5 yrs</span><br>
-Experience
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">10+</span><br>
-    Projects Done
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">10+</span><br>
-Languages known
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">5+</span><br>
-   Achievements
-  </div>
-</div>
-
-<!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
-  </div>
-</div>
-
-<!-- Container (Portfolio Section) -->
-<div class=" w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
-
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-	<div class="w3-col m6">
-	  <div class="w3-card">
-	<iframe src="https://rbussinessolutions.com/" style="width:100%"   height="500"></iframe>
-
-	<h1>R bussiness solutions</h1>
-	</div>
-</div>
-    <div class="w3-col m6" > 
-		<div class="w3-card">
-		<iframe src="http://rais.applehealth.in/user" style="width:100%"   height="500"></iframe>
-		<h1>Apple health</h1>
-		</div>
-	</div>
-
-  <div class="w3-row-padding w3-center">
-		<div class="w3-col m6">
-		<div class="w3-card">
-		<iframe src="http://suitmeup.rbussinessolutions.com/" style="width:100%"   height="500"></iframe>
-	
-		<h1>Suitme Up</h1>
-		</div>
-	</div>
-    <div class="w3-col m6" >
-		 <div class="w3-card">
-		<iframe src="https://madnands5.github.io/Vaanilekh/" style="width:100%"   height="500"></iframe>
-		
-		<h1>Vaaniliekh</h1>
-		</div>
-	</div>
-	  <div class="w3-row-padding w3-center">
-		<div class="w3-col m6">
-		<div class="w3-card">
-		<iframe src="https://ehrmsys.com/" style="width:100%"  target="_parent" height="500"></iframe>
-	
-		<h1>Ehrms</h1>
-		</div>
-	</div>
-    <div class="w3-col m6" >
-		 <div class="w3-card">
-		<iframe src="https://madnands5.github.io/Vaanilekh/" style="width:100%"   height="500"></iframe>
-		
-		<h1>Vaaniliekh</h1>
-		</div>
-	</div>
-</div>
-
-</div>
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
-
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
-  </div>
-</div>
-
-<!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">Hi!!</h3>
-  <p class="w3-center"><em>I'd love your feedback!</em></p>
-
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4Dyl_4V_fW1rrZQ-mPPQaTGvIwnGT3mzmTQ-pWpPpQ6FiwffJNQ&s" class="w3-image w3-round" style="width:100%">
-    </div>
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom" style="text-align:left;padding-left:5%;">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Maharashtra, IN<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +91 7447525123<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>  madnands5@gmail.com<br>
-           <i class="fa fa-coffee fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>   Swing by for a cup of 
+	<head>
+   <title>W3.CSS Template</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" media="all">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" media="all">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="all">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.js"></script>
+   <style>
+      @media print {
+      .bgimg-1 {
+      background-image: linear-gradient(to right, red , yellow) !important;
+      min-height: 100%;
+      }
+      }
+      iframe{
+      border:solid 10px;
+      }
+      body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+      body, html {
+      height: 100%;
+      color: black
+      font-weight: bold;
+      line-height: 1.8;
+      }
+      p{
+      color:black;}
+      /* Create a Parallax Effect */
+      .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+      /* First image (Logo. Full height) */
+      .bgimg-1 {
+      background-image: url('https://miro.medium.com/max/2880/1*GgLVXXfYDuS08V1SQQQaeQ.jpeg');
+      min-height: 100%;
+      }
+      /* Second image (Portfolio) */
+      .bgimg-2 {
+      background-image: url('https://i.ytimg.com/vi/TwYKwaEjJd4/maxresdefault.jpg');
+      min-height: 400px;
+      }
+      /* Third image (Contact) */
+      .bgimg-3 {
+      background-image: url('https://assets.bosch.com/media/global/contact/bosch-contact.jpg');
+      min-height: 400px;
+      }
+      .btn {
+      background-color: white;
+      border: none;
+      color: black;
+      padding: 1px 30px;
+      cursor: pointer;
+      font-size: 20px;
+      }
+      .w3-wide {letter-spacing: 10px;}
+      .w3-hover-opacity {cursor: pointer;}
+      /* Turn off parallax scrolling for tablets and phones */
+      @media only screen and (max-device-width: 1600px) {
+      .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: scroll;
+      min-height: 400px;
+      }
+      }
+      .w3-card {
+      margin-bottom:60px;
+      }
+   </style>
+   <script>
+   html2canvas(document.body).then(function(canvas) {
+ document.body.appendChild(canvas);
+});
+   </script>
+   </head>
+   <body>
+      <!-- Navbar (sit on top) -->
+      <div class="w3-top">
+         <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+            <i class="fa fa-bars"></i>
+            </a>
+            <a href="#home" class="w3-bar-item w3-button">HOME</a>
+            <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+         </div>
+         <!-- Navbar on small screens -->
+         <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+         </div>
       </div>
+      <!-- First Parallax Image with Logo Text -->
+      <div class="bgimg-1 w3-display-container " id="home">
+         <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity" style="color:white"> <span class="w3-hide-small">Curriculum Vitae</span> </span>
+         </div>
+      </div>
+      <div id="fullc">
+      <!-- Container (About Section) -->
+      <div class="w3-content w3-container w3-padding-64" id="about ">
+         <h3 class="w3-center">My Story</h3>
+         <p class="w3-center"><em>How it began...</em></p>
+         <p> As a child i was always facinated about computers.Being a 90s kid and from a middle class background i never had a chance to own a pc Back then.
+            I remember when I was promoted to 7th standard I was very exited... not for the pen or the full pants uniform but for being able to touch a computes for the first time .
+            that is when i decided to become a developer. An elder cousin was already working as a webdeveloper and I started learning  to do the same, School had already created  a
+            base in coding for me by teaching us msDOS and turtle (was fun at that time).So here I am  10  years later living my Dream.  
+         </p>
+         <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-padding-large">
+               <p><b><i class="fa fa-user w3-margin-right"></i>Rahul Bhingardive</b></p>
+               <br>
+               <img src="https://rbussinessolutions.com/myimg.jpg" class="w3-round w3-image " alt="Photo of Me" width="500" height="333">
+            </div>
+            <!-- Hide this text on small devices -->
+            <div class="w3-col m6 w3-hide-small w3-padding-large">
+               <h3 class="w3-center">Achivements</h3>
+               <p class="w3-center"><em>When we follow the path we choose we are bound to succeed.
+                  </em>
+               </p>
+               <p>
+                  In past few Years I have grown a lot .
+                  achived some things in life and am still on my journey.  <br>
+                  I was rewarded as :<br>
+                  <b>"brightest beginner"</b>: @NeuralIT this year  <br>
+                  <b>"Champion"</b>:   &nbsp;&nbsp;       @Nowrosjee wadia college "Graphics".<br>
+                  <b>"Winners"</b>:     &nbsp;&nbsp;       @MIT ADT cup(Team effort);</br>
+                  <b>"Runner up"</b>: &nbsp;&nbsp;   @Pune district IC championship<br>
+                  <b>"Well done"</b>: &nbsp;&nbsp;   @SPUP code-IT challange
+                  <ve>
+               </p>
+            </div>
+         </div>
+         <p class="w3-large w3-center w3-padding-16">My tools </p>
+         <p class="w3-wide"><i class="fa fa-desktop"></i>PHP</p>
+         <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-yellow w3-center" style="width:90%">90%</div>
+         </div>
+         <p class="w3-wide"><i class="fa fa-mobile"></i>Python</p>
+         <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-red w3-center" style="width:75%">75%</div>
+         </div>
+         <p class="w3-wide"><i class="fa fa-laptop"></i>Jquey</p>
+         <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-blue w3-center" style="width:85%">85%</div>
+         </div>
+         <p class="w3-wide"><i class="fa fa-photo"></i>HTML</p>
+         <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-orange w3-center" style="width:90%">90%</div>
+         </div>
+         <p class="w3-wide"><i class="fa fa-photo"></i>Css</p>
+         <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-green w3-center" style="width:90%">90%</div>
+         </div>
+         <p class="w3-wide"><i class="fa fa-desktop"></i>C</p>
+         <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-yellow w3-center" style="width:60%">60%</div>
+         </div>
+         <p class="w3-wide"><i class="fa fa-mobile"></i>JAVA</p>
+         <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-red w3-center" style="width:70%">70%</div>
+         </div>
+         <p class="w3-wide"><i class="fa fa-database"></i>MYSQL</p>
+         <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-blue w3-center" style="width:80%">80%</div>
+         </div>
+         <p class="w3-wide"><i class="fa fa-database"></i>PGSQL</p>
+         <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-orange w3-center" style="width:65%">65%</div>
+         </div>
+      </div>
+      <div class="w3-row w3-center w3-black w3-padding-16">
+         <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">1.5 yrs</span><br>
+            Experience
+         </div>
+         <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">10+</span><br>
+            Projects Done
+         </div>
+         <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">10+</span><br>
+            Languages known
+         </div>
+         <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">5+</span><br>
+            Achievements
+         </div>
+      </div>
+      <!-- Second Parallax Image with Portfolio Text -->
+      <div class="bgimg-2 w3-display-container ">
+         <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+         </div>
+      </div>
+      <!-- Container (Portfolio Section) -->
+      <div class=" w3-container w3-padding-64" id="portfolio">
+      <h3 class="w3-center">MY WORK</h3>
+      <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p>
+      <br>
+      <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+      <div class="w3-row-padding w3-center">
+         <div class="w3-col m6">
+            <div class="w3-card">
+               <iframe src="https://rbussinessolutions.com/" style="width:100%"   height="500"></iframe>
+               <h1>R bussiness solutions</h1>
+               <p style="text-align:left;padding-left:5%;padding-bottom:5%;">
+                  A website for Outsourcing bussiness process.(under Process)<br>
+                  Uses php,Jquery,JS,Boot-strap4,PHPMailer(),Mysql;<br>
+                  Duration:3 MONTHS;(PART TIME)
+                  Hosted:HOSTINGER<br>
+                  @<A HREF="rbussinessolutions.com">R BussinesSolutions</A><br>
+                  Targests Clients in USA,AUS,CANADA and Qualified professionals in India
+               </p>
+            </div>
+         </div>
+         <div class="w3-col m6" >
+            <div class="w3-card">
+               <iframe src="http://rais.applehealth.in/user" style="width:100%"   height="500"></iframe>
+               <h1>Apple health Systems</h1>
+               <p style="text-align:left;padding-left:5%;padding-bottom:5%;">
+                  A webapp for managing hospital activitiesprocess.<br>
+                  Uses Php,Jquery,JS,Boot-strap4,PGsql,ckeditor4;Drupal6<br>
+                  Hosted:InCorp Server<br>
+                  Duration:6 MONTHS;(FULLTIME)
+                  @<A HREF="http://applehealth.in/">Apple Health Systems</A><br>
+                  Used by leading hospitals in mumbai ,and also the lates government  
+               </p>
+            </div>
+         </div>
+         <div class="w3-row-padding w3-center">
+            <div class="w3-col m6">
+               <div class="w3-card">
+                  <iframe src="http://suitmeup.rbussinessolutions.com/" style="width:100%"   height="500"></iframe>
+                  <h1>Suitme Up</h1>
+                  <p style="text-align:left;padding-left:5%;padding-bottom:5%;">
+                     A ECOMMERCE PLATFORM for premium formal and casual-ware for memorable occations.<br>
+                     Uses Php,Jquery,JS,Boot-strap4,PGsql;jqmobile;animate.css<br>
+                     Hosted:Down<br>
+                     Duration:6 MONTHS;(PART TIME)<br>
+                     @<A HREF="">SuitMeUp</A><br>
+                     Target to people wo expresss through their fashion
+                  </p>
+               </div>
+            </div>
+            <div class="w3-col m6" >
+               <div class="w3-card">
+                  <iframe src="https://madnands5.github.io/Vaanilekh/" style="width:100%"   height="500"></iframe>
+                  <h1>Vaanilekh</h1>
+                  <p style="text-align:left;padding-left:5%;padding-bottom:5%;">
+                     A JS based voice transcription app that help disabled students to give exams <br>
+                     Uses Jquery,JS,Boot-strap4,Web-to-speechAPI(Chrome)<br>
+                     Hosted:InCorp Server<br>
+                     Duration:2 MONTHS;(PART TIME)<br>
+                     @<A HREF="https://madnands5.github.io/Vaanilekh/">Vaanilekh</A><br>
+                     used by leading hospitals in mumbai ,and also the lates government  
+                  </p>
+               </div>
+            </div>
+            <div class="w3-row-padding w3-center">
+               <div class="w3-col m6">
+                  <div class="w3-card">
+                     <iframe src="https://ehrmsys.com/" style="width:100%"  target="_parent" height="500"></iframe>
+                     <h1>Ehrms</h1>
+                     <p style="text-align:left;padding-left:5%;padding-bottom:5%;">
+                        AN Online HR management software scaling all over India <br>
+                        Uses PHP,Jquery,JS,Boot-strap4,Mysql,Drupal7<br>
+                        Hosted:InCorp Server<br>
+                        Duration:6 MONTHS;(FULLTIME)<br>
+                        @<A HREF="https://ehrmsys.com/">EHRMS.com</A><br>
+                        used by leading hospitals in mumbai ,and also the lates government  
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal for full size images on click-->
+         <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+            <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+               <img id="img01" class="w3-image">
+               <p id="caption" class="w3-opacity w3-large"></p>
+            </div>
+         </div>
+         <!-- Third Parallax Image with Portfolio Text -->
+         <div class="bgimg-3 w3-display-container ">
+            <div class="w3-display-middle">
+               <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+            </div>
+         </div>
+         <!-- Container (Contact Section) -->
+         <div class="w3-content w3-container w3-padding-64" id="contact">
+            <h3 class="w3-center">Hi!!</h3>
+            <p class="w3-center"><em>I'd love your feedback!</em></p>
+            <div class="w3-row w3-padding-32 w3-section">
+               <div class="w3-col m4 w3-container">
+                  <img src="https://rbussinessolutions.com/myimg.jpg" class="w3-image w3-round" style="width:100%">
+               </div>
+               <div class="w3-col m8 w3-panel">
+                  <div class="w3-large w3-margin-bottom" style="text-align:left;padding-left:5%;">
+                     <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Maharashtra, IN<br>
+                     <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +91 7447525123<br>
+                     <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>  madnands5@gmail.com<br>
+                     <i class="fa fa-coffee fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>   Swing by for a cup of 
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Footer -->
+         <footer class="w3-center w3-black w3-padding-64 ">
+            <div class="w3-xlarge w3-section">
+               <i class="fa fa-facebook-official w3-hover-opacity"></i>
+               <i class="fa fa-instagram w3-hover-opacity"></i>
+               <i class="fa fa-snapchat w3-hover-opacity"></i>
+               <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+               <i class="fa fa-twitter w3-hover-opacity"></i>
+               <i class="fa fa-linkedin w3-hover-opacity"></i>
+            </div>
+            <p><a href="https://madnands5.github.io/R-solutions/W3.CSS_Template_-_2020-01-07_16.15.59.png" download><button class="btn "><i class="fa fa-download"></i> Download</button></a></p>
+         </footer>
+      </div>
+      <script>
+         // Modal Image Gallery
+         function onClick(element) {
+           document.getElementById("img01").src = element.src;
+           document.getElementById("modal01").style.display = "block";
+           var captionText = document.getElementById("caption");
+           captionText.innerHTML = element.alt;
+         }
+         
+         // Change style of navbar on scroll
+         window.onscroll = function() {myFunction()};
+         function myFunction() {
+             var navbar = document.getElementById("myNavbar");
+             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                 navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+             } else {
+                 navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+             }
+         }
+         
+         // Used to toggle the menu on small screens when clicking on the menu button
+         function toggleFunction() {
+             var x = document.getElementById("navDemo");
+             if (x.className.indexOf("w3-show") == -1) {
+                 x.className += " w3-show";
+             } else {
+                 x.className = x.className.replace(" w3-show", "");
+             }
+         }
 
 
-    </div>
-  </div>
-</div>
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 ">
-
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-  <p><button class="btn dw"><i class="fa fa-download"></i> Download</button></p>
-</footer>
- 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-$("document").ready(function(){
-	
-
-$(".dw").click(function(){
-
- window.print();
-});
-});
-</script>
-
-</body>
+      </script>
+   </body>
 </html>
+
